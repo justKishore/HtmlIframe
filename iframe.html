@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment-6</title>
+    <style>
+      .form-container {
+        display: inline-block;
+        margin: 20px;
+        width: 300px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Hey Welcome,</h1>
+    <p>Learn Web development with me!</p>
+    <p>This page is build for understanding iframes</p>
+    <h2>Youtbue helps</h2>
+    <!-- embed video from youtube -->
+    <iframe
+      width="495"
+      height="300"
+      src="https://www.youtube.com/embed/qz0aGYrrlhU"
+      name="HTML-yt"
+      title="Learn HTML"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;"
+      allowfullscreen
+      loading="eager"
+    ></iframe>
+
+    <!-- Second youtube video -->
+    <iframe
+      width="495"
+      height="300"
+      src="https://www.youtube.com/embed/yfoY53QXEnI"
+      name="CSS-yt"
+      title="Learn CSS"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+    ></iframe>
+
+    <iframe
+      width="495"
+      height="300"
+      src="https://www.youtube.com/embed/W6NZfCO5SIk"
+      name="JS-yt"
+      title="Learn JS"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+    ></iframe>
+
+    <h2>Make use of W3 schools/MDN</h2>
+
+    <iframe
+      src="w3-mdn.html"
+      name="w3-mdn"
+      height="300px"
+      width="100%"
+      title="Learn from W3 schools or Mdn"
+    ></iframe>
+
+    <a
+      href="https://www.w3schools.com"
+      target="w3-mdn"
+      style="margin-right: 10px"
+      >W3Schools.com</a
+    >
+    <a href="https://developer.mozilla.org/en-US/" target="w3-mdn">MDN</a>
+    <br />
+
+    <!-- iframe with sandbox form -->
+    <div class="form-container">
+      <p>1. Form with sandbox nothing allowed, so submit not allowed</p>
+      <iframe
+        style="background-color: cadetblue"
+        src="feedback.html"
+        frameborder="0"
+        name="feedback-iframe"
+        title="Iframe with feedback from"
+        sandbox
+        scrolling="yes"
+      ></iframe>
+    </div>
+    <div class="form-container">
+      <p>2. Form with sandbox allow-forms, so you can submit</p>
+      <iframe
+        style="background-color: cadetblue"
+        src="feedback.html"
+        frameborder="0"
+        name="feedback-iframe"
+        title="Iframe with feedback from"
+        sandbox="allow-forms"
+        scrolling="yes"
+      ></iframe>
+    </div>
+  </body>
+</html>
